@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import { rhythm, scale } from '../utils/typography'
 import './layout.css'
+import '../styles/with-lunr.css'
 
 class Layout extends React.Component {
   render() {
