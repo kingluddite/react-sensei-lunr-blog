@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Layout from '../components/layout'
-import SearchForm from '../components/SearchForm'
-import SearchResults from '../components/SearchResults'
+import SearchForm from '../components/searchForm'
+import SearchResults from '../components/searchResults'
 
 const Search = ({ data, location, query }) => {
   const [results, setResults] = useState([])
