@@ -2,58 +2,23 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const striptags = require('striptags')
-
-const blogQuery = `
-{
-    allMarkdownRemark {
-      nodes {
-        frontmatter {
-          title
-          date
-          description
-        }
-        fields {
-         slug
-        }
-        html
-      }
-    }
-  }
-`
-
-const queries = [
-  {
-    query: blogQuery,
-    transformer: ({ data }) => {
-      return data.allMarkdownRemark.nodes.reduce((indices, post) => {
-        const pChunks = striptags(post.html, [], 'XXX_SPLIT_HERE_XXX').split(
-          'XXX_SPLIT_HERE_XXX'
-        )
-
-        const chunks = pChunks.map(chnk => ({
-          slug: post.fields.slug,
-          date: post.frontmatter.date,
-          title: post.frontmatter.title,
-          excerpt: chnk,
-        }))
-
-        if (post.frontmatter.description) {
-          chunks.push({
-            slug: post.fields.slug,
-            date: post.frontmatter.date,
-            title: post.frontmatter.title,
-            excerpt: post.frontmatter.excerpt,
-          })
-        }
-
-        const filtered = chunks.filter(chnk => !!chnk.excerpt)
-
-        return [...indices, ...filtered]
-      }, [])
-    },
-  },
-]
+// const blogQuery = `
+// {
+//     allMarkdownRemark {
+//       nodes {
+//         frontmatter {
+//           title
+//           date
+//           description
+//         }
+//         fields {
+//          slug
+//         }
+//         html
+//       }
+//     }
+//   }
+// `
 
 module.exports = {
   siteMetadata: {
@@ -202,9 +167,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
     },
     `gatsby-plugin-feed`,
     {

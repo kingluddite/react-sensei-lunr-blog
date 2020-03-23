@@ -11,7 +11,7 @@ const SearchForm = ({ query }) => (
         name="keywords"
         aria-controls="search-results-count"
         onChange={e =>
-          navigate(`/search?keywords=${encodeURIComponent(e.target.value)}`)
+          navigate(`/?keywords=${encodeURIComponent(e.target.value)}`)
         }
         value={query}
       />
