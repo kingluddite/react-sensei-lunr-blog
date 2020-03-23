@@ -1,10 +1,7 @@
 {
   "extends": [
     "airbnb",
-    "plugin:flowtype/recommended",
-    "plugin:react/recommended",
     "prettier",
-    "prettier/flowtype",
     "prettier/react"
   ],
   "env": {
@@ -25,8 +22,8 @@
     }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "comma-dangle": ["error", "only-multiline"],
+    "react/no-danger": "off",
     "no-underscore-dangle": [0],
-    "semi": [2, "always"],
     "react/prop-types": 0,
     "react/jsx-boolean-value": 0,
     "no-console": 0,

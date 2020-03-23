@@ -4,7 +4,7 @@ const SearchResults = ({ query, results }) => (
   <section aria-label="Search results for all posts">
     {!!results.length && query && (
       <h2 className="search-results-count" aria-live="assertive">
-        Found {results.length} posts on "{query}"
+        Found {results.length} posts on &quot;{query}&quot;
       </h2>
     )}
     {!!results.length && (
