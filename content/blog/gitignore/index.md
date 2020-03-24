@@ -15,3 +15,8 @@ description: What is .gitignore for?
     - To get it in their repo, they just `$ npm install` and all the dependencies listed in `package.json` will be installed on your team member's local machine
     - You don't need to specify the version numbers because all of that info lives in `package.json`
     - This saves us and our team a ton of time passing our project around
+
+## Test it out
+* Delete `package-lock.json` and `node_modules`
+* Type `$ npm install`
+* You will see your `node_modules` directory is created as well as a fresh new copy of `package-lock.json`
