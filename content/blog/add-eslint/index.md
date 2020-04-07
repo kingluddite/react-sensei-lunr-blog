@@ -6,7 +6,7 @@ description: Take the pain out of adding eslint
 
 ## Add these dev dependencies
 ```
-$ npm install -D eslint eslint-config-airbnb eslint-config-prettier eslint-loader eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react gatsby-plugin-eslint prettier
+$ npm install -D eslint eslint-config-airbnb eslint-config-prettier eslint-loader eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react gatsby-plugin-eslint prettier eslint-plugin-html
 ```
 
 ## Create `.eslintrc` in the root of your project
@@ -54,7 +54,8 @@ $ npm install -D eslint eslint-config-airbnb eslint-config-prettier eslint-loade
     "react",
     "jsx-a11y",
     "import",
-    "prettier"
+    "prettier",
+    "html"
   ],
   "settings": {
     "ecmascript": 7,
