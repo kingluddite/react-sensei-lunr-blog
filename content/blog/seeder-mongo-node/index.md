@@ -155,5 +155,9 @@ if (process.argv[2] === '-i') {
 
 `$ node seeder -d`
 
+* This will delete all data
+
 ### Import data
 `$ node seeder -i`
+
+* This will import all data from JSON file you pointed to
