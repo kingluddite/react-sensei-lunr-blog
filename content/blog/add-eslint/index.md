@@ -1,7 +1,7 @@
 ---
 title: Add Eslint
 date: "2020-03-22T23:46:37.121Z"
-description: Take the pain out of adding eslint
+description: Take the pain out of adding eslint to projects
 ---
 
 ## Add these dev dependencies
