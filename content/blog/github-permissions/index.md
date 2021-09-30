@@ -23,7 +23,6 @@ fatal: Authentication failed for 'https://github.com/YOURREPO.git'
 `$ gh auth login`
 
 * Then you will be asked to enter your credentials to authenticate on GitHub
-* (The following questions context is different because I am currently logged into my GitHub repo)
 
 ### Generate a token on GitHub
 * Use this link:
